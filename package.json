@@ -1,0 +1,50 @@
+{
+  "name": "e2e-purify-html",
+  "version": "0.1.0",
+  "description": "Simplify HTML for e2e testing - strips noise attributes, SVG paths, random classnames, inline styles while preserving element structure and hierarchy",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "html",
+    "purify",
+    "simplify",
+    "e2e",
+    "testing",
+    "playwright",
+    "html-sanitize",
+    "strip-html",
+    "clean-html"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^3.0.0"
+  }
+}
