@@ -43,6 +43,7 @@
     "cheerio": "^1.0.0"
   },
   "devDependencies": {
+    "@types/node": "^25.5.0",
     "tsup": "^8.0.0",
     "typescript": "^5.4.0",
     "vitest": "^3.0.0"
